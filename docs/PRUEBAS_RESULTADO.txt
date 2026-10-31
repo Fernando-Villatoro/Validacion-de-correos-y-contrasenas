@@ -1,0 +1,97 @@
+OK    AFD-02     AFD R_may                                  esp= 9 obt= 9 
+OK    AFD-03     AFD R_long                                 esp= 14 obt= 14 
+OK    AFD-R_min  AFD R_min                                  esp= 9 obt= 9 
+OK    AFD-R_dig  AFD R_dig                                  esp= 9 obt= 9 
+OK    AFD-R_sim  AFD R_sim                                  esp= 9 obt= 9 
+OK    ε-01       cierre ε del inicio contiene al inicio     esp= true obt= true 
+OK    COR-1      juan.perez@unis.edu.gt                     esp= true obt= true 
+OK    COR-2      maria_lopez99@gmail.com                    esp= true obt= true 
+OK    COR-3      .carlos@dominio.com                        esp= false obt= false 
+OK    COR-4      usuario@-dominio.com                       esp= false obt= false 
+OK    COR-5      usuario@dominio.c                          esp= false obt= false 
+OK    COR-6      juan..perez@gmail.com                      esp= false obt= false 
+OK    COR-7      juan.@gmail.com                            esp= false obt= false 
+OK    COR-8      a@b.co                                     esp= true obt= true 
+OK    COR-9      juan@@gmail.com                            esp= false obt= false 
+OK    COR-10     mi correo@gmail.com                        esp= false obt= false 
+OK    COR-11     (vacío)                                    esp= false obt= false 
+OK    COR-12     usuario@dominio-.com                       esp= false obt= false 
+OK    COR-13     x@y.z1                                     esp= false obt= false 
+OK    PAS-1      Tu9@guate2026                              esp= true obt= true 
+OK    PAS-2      Mk3#Verde2026Sol                           esp= true obt= true 
+OK    PAS-3      xK7$mundoAzul                              esp= true obt= true 
+OK    PAS-4      TTu9@guate2026                             esp= true obt= true 
+OK    PAS-5      tu9@guate2026                              esp= false obt= false 
+OK    PAS-6      TU9@GUATE2026                              esp= false obt= false 
+OK    PAS-7      Tu@guateXelaYZ                             esp= false obt= false 
+OK    PAS-8      Tu9guate2026                               esp= false obt= false 
+OK    PAS-9      Tu9@corto                                  esp= false obt= false 
+OK    PAS-10     Tu9@aaaguate26                             esp= false obt= false 
+OK    PAS-11     Tu9@Guatemala2026                          esp= false obt= false 
+OK    PAS-12     Tu9@guate 2026                             esp= false obt= false 
+OK    PAS-13     Zq7#Lm4$Rt8!Vb2&Xn5%Pd3*Hk6+Wc9=Fy1-Jg0_   esp= false obt= false 
+OK    PAS-14     Ab9#xqZ!k3Q$w                              esp= true obt= true 
+OK    PAS-15     Ab9#xyz!k3Q$w                              esp= false obt= false 
+OK    AFD-01     estados mínimos: generado vs AFD del doc   esp= 8 obt= 8 sin minimizar: generado 42, documento 17
+OK    EQV-correo AFND≡AFD (300 cadenas)                     esp= 0 obt= 0 
+OK    EQV-R_long AFND≡AFD (300 cadenas)                     esp= 0 obt= 0 
+OK    EQV-R_may  AFND≡AFD (300 cadenas)                     esp= 0 obt= 0 
+OK    EQV-R_min  AFND≡AFD (300 cadenas)                     esp= 0 obt= 0 
+OK    EQV-R_dig  AFND≡AFD (300 cadenas)                     esp= 0 obt= 0 
+OK    EQV-R_sim  AFND≡AFD (300 cadenas)                     esp= 0 obt= 0 
+OK    DOC-01     AFD generado ≡ AFD del documento (3000 c   esp= 0 obt= 0 
+OK    GEN-01     50 correos generados aceptados por AFD     esp= 50 obt= 50 
+OK    GEN-02     50 contraseñas generadas válidas           esp= 50 obt= 50 
+OK    GEN-03     50 correos aceptados por el AFND           esp= 50 obt= 50 
+OK    GEN-04     generación termina (<5 s)                  esp= true obt= true 
+OK    DIAG-1     juan..perez@gmail.com                      esp= true obt= true contiene «dos puntos seguidos» y sin q# en el mensaje
+OK    DIAG-2     .carlos@dominio.com                        esp= true obt= true contiene «comienza con punto» y sin q# en el mensaje
+OK    DIAG-3     juan.@gmail.com                            esp= true obt= true contiene «termina con punto» y sin q# en el mensaje
+OK    DIAG-4     usuario@-dominio.com                       esp= true obt= true contiene «comienza con guion» y sin q# en el mensaje
+OK    DIAG-5     usuario@dominio-.com                       esp= true obt= true contiene «termina con guion» y sin q# en el mensaje
+OK    DIAG-6     usuario@dominio.c                          esp= true obt= true contiene «una sola letra» y sin q# en el mensaje
+OK    DIAG-7     juan@@gmail.com                            esp= true obt= true contiene «más de un @» y sin q# en el mensaje
+OK    DIAG-8     juan.perezgmail.com                        esp= true obt= true contiene «Falta el símbolo @» y sin q# en el mensaje
+OK    DIAG-9     mi correo@gmail.com                        esp= true obt= true contiene «espacio» y sin q# en el mensaje
+OK    DIAG-10    a@b                                        esp= true obt= true contiene «extensión» y sin q# en el mensaje
+OK    DIAG-11    x@y.z1                                     esp= true obt= true contiene «solo letras» y sin q# en el mensaje
+OK    DIAG-12    (vacío)                                    esp= true obt= true contiene «vacío» y sin q# en el mensaje
+OK    DIAG-13    @gmail.com                                 esp= true obt= true contiene «No hay parte local» y sin q# en el mensaje
+OK    DIAG-14    a@                                         esp= true obt= true contiene «Falta el dominio» y sin q# en el mensaje
+OK    DIAG-15    a@b_c.com                                  esp= true obt= true contiene «solo admite» y sin q# en el mensaje
+OK    DIAG-sec   el detalle técnico conserva el recorrido   esp= true obt= true 
+OK    DIAG-ok    correo válido: sin diagnóstico             esp= 0 obt= 0 
+OK    DIAG-cons  aceptado por AFD ⇒ sin diagnóstico (1500   esp= 0 obt= 0 
+OK    DIAG-cob   rechazado por AFD ⇒ hay causa identifica   esp= 0 obt= 0 rechazos analizados: 195
+OK    ALF-01     Tu9.guate2026: regla de alfabeto incumpl   esp= true obt= true 
+OK    ALF-02     detalle indica «.» y posición 4            esp= true obt= true 
+OK    ALF-03     rechazo final se mantiene                  esp= false obt= false 
+OK    ALF-04     R_may/R_min/R_dig cumplen por separado     esp= true obt= true 
+OK    ALF-05     R_sim incumple (el «.» no es símbolo per   esp= true obt= true 
+OK    ALF-06     R_long no evaluable                        esp= true obt= true 
+OK    ALF-07     no todas las reglas fallan                 esp= true obt= true 
+OK    ALF-08     Tu9@guate2026ñ: solo alfabeto falla (+no   esp= 1 obt= 1 ñ posición 14
+OK    ALF-09     contraseña válida: regla de alfabeto cum   esp= true obt= true 
+OK    SEG-01     inválida ⇒ baja                            esp= baja obt= baja 
+OK    SEG-02     válida de 13 caracteres ⇒ media (válida    esp= media obt= media 
+OK    SEG-03     válida ⇒ el reporte lo marca válida y me   esp= true obt= true 
+OK    SEG-04     16 caracteres y ≥10 distintos ⇒ fuerte     esp= fuerte obt= fuerte 
+OK    SEG-05     15 caracteres ⇒ media                      esp= media obt= media 
+OK    SEG-06     16 caracteres pero solo 4 distintos ⇒ me   esp= media obt= media 
+OK    SEG-07     el motivo explica lo que falta             esp= true obt= true 
+OK    SEG-08     baja: el motivo nombra la regla incumpli   esp= true obt= true 
+OK    SEG-09     50 contraseñas generadas traen nivel y m   esp= 50 obt= 50 
+OK    SEG-10     50 pares generados traen nivel             esp= 50 obt= 50 
+
+84/84 aprobadas
+10 pares:
+  -vaf7f1d5-%i-_c87p-e2n.9@I.VQEPGVW | K_1PnPoiEK1g# media
+  y%-v@yu.Oj-ljad1uo54.8.tBW | Ml8_*1$Js_0UG media
+  4oT0ut.qfPdy@7xy.0gxhz88.DFE | Mg1!MM=7WFf2O%13 fuerte
+  wRp%j%@zvxx-rh.r8wK.k8ju.BO | y$6BPu4eZADq3A%k=& fuerte
+  +rcm@eov.MhWx | 2u0d*wXi^f$oN@B7*%c fuerte
+  8yO-vsMh1.ma8f++.wtxsV3.Y@D.UZI | _8rP8A-Q^2X_751^ fuerte
+  H5u@067ph.hnscRz.z2Qukp0.EDWYAF | hS9&2&9UA3mn1Jg1b77 fuerte
+  _ewAw@3.ta | 93x+@S@6-4ebl media
+  h+rkhn6m1n%.%o_xglmyh6va@L.OVRLLABHCYYABG | QXQ0xwcf%yR53+ media
+  d@sz70F6o-rl3knwgSb.Wv | W%00Uxk3Ogql1LY0 fuerte

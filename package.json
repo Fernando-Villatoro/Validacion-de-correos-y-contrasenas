@@ -1,0 +1,52 @@
+{
+  "name": "credenciales-seguras",
+  "productName": "Validador Léxico de Credenciales Seguras",
+  "version": "1.0.0",
+  "description": "Sistema de Generación y Validador Léxico de Credenciales Seguras (AFND/AFD, Thompson y subconjuntos). Aplicación de escritorio.",
+  "author": "Proyecto Credenciales",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "test": "node pruebas/pruebas.js",
+    "verificar": "node scripts/verificar.js",
+    "dist": "npm run verificar && electron-builder --win nsis --x64",
+    "dist:portable": "npm run verificar && electron-builder --win portable --x64",
+    "dist:todo": "npm run verificar && electron-builder --win nsis portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "gt.edu.proyecto.credenciales",
+    "productName": "Validador Léxico de Credenciales Seguras",
+    "executableName": "ValidadorCredenciales",
+    "copyright": "Proyecto académico",
+    "asar": true,
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.js", "package.json", "app/**/*", "build/icon.png", "!**/*.md", "!**/PRUEBAS_RESULTADO.txt"],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [{ "target": "nsis", "arch": ["x64"] }]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Validador de Credenciales",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "language": "3082",
+      "artifactName": "Instalador-Credenciales-Seguras-${version}.${ext}"
+    },
+    "portable": { "artifactName": "Credenciales-Seguras-Portable-${version}.${ext}" }
+  }
+}
